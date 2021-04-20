@@ -1,0 +1,20 @@
+@font-face {
+	font-family: 'Liberation Sans';
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+	src: url('LiberationSans.woff2') format('woff2'),
+		url('LiberationSans.woff') format('woff'),
+		url('LiberationSans.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Liberation Sans';
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+	src: url('LiberationSans-Bold.woff2') format('woff2'),
+		url('LiberationSans-Bold.woff') format('woff'),
+		url('LiberationSans-Bold.ttf') format('truetype');
+}
+

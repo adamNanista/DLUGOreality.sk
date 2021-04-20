@@ -1,0 +1,49 @@
+body {
+	color: #010101;
+	font-family: 'Liberation Sans', sans-serif;
+	font-size: 18px;
+	line-height: 30px;
+}
+
+h1, 
+.h1--like {
+	font-size: 30px;
+	line-height: 40px;
+}
+h1:not(:last-child), 
+.h1--like:not(:last-child) {
+	margin-bottom: 16px;
+}
+h2, 
+.h2--like {
+	font-size: 21px;
+	line-height: 30px;
+}
+
+p:not(:last-child) {
+	margin-bottom: 16px;
+}
+
+strong, b {
+	font-weight: bold;
+}
+
+@media (min-width: 1025px) {
+	h1, 
+	.h1--like {
+		font-size: 40px;
+		line-height: 51px;
+	}
+	h1:not(:last-child), 
+	.h1--like:not(:last-child) {
+		margin-bottom: 24px;
+	}
+	h2, 
+	.h2--like {
+		font-size: 24px;
+		line-height: 36px;
+	}
+	p:not(:last-child) {
+		margin-bottom: 24px;
+	}
+}
