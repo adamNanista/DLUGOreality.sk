@@ -11,7 +11,10 @@ h1,
 	line-height: 40px;
 }
 h1:not(:last-child), 
-.h1--like:not(:last-child) {
+.h1--like:not(:last-child), 
+h2:not(:last-child), 
+.h2--like:not(:last-child), 
+p:not(:last-child) {
 	margin-bottom: 16px;
 }
 h2, 
@@ -20,8 +23,16 @@ h2,
 	line-height: 30px;
 }
 
-p:not(:last-child) {
-	margin-bottom: 16px;
+.smaller {
+	font-size: 14px;
+	line-height: 24px;
+}
+.small {
+	font-size: 12px;
+	line-height: 20px;
+}
+.muted {
+	color: #767676;
 }
 
 strong, b {
@@ -35,15 +46,15 @@ strong, b {
 		line-height: 51px;
 	}
 	h1:not(:last-child), 
-	.h1--like:not(:last-child) {
+	.h1--like:not(:last-child), 
+	h2:not(:last-child), 
+	.h2--like:not(:last-child), 
+	p:not(:last-child) {
 		margin-bottom: 24px;
 	}
 	h2, 
 	.h2--like {
 		font-size: 24px;
 		line-height: 36px;
-	}
-	p:not(:last-child) {
-		margin-bottom: 24px;
 	}
 }

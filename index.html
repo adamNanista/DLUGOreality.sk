@@ -23,7 +23,6 @@
 	
 	<!-- Load Styles -->
 	<link rel="stylesheet" href="assets/css/reset.css" />
-	<link rel="stylesheet" href="assets/css/utilities.css" />
 	<link rel="stylesheet" href="assets/css/typography.css" />
 	<link rel="stylesheet" href="assets/css/grid.css" />
 	<link rel="stylesheet" href="assets/css/components.css" />
@@ -516,11 +515,12 @@
 							</div>
 							<div class="form__group">
 								<div class="form__element">
-									<select class="form__control" required>
+									<select class="form__control form__control--error" required>
 										<option value="" disabled selected hidden>Aký typ nehnuteľnosti chcete predať?</option>
 										<option value="1">Dom</option>
 										<option value="2">Byt</option>
 									</select>
+									<span class="error__message"><i class="fas fa-exclamation-circle"></i>Prosím, doplňte</span>
 								</div>
 							</div>
 							<div class="form__group">
@@ -537,7 +537,8 @@
 									<textarea class="form__control" rows="2" placeholder="Doplňujúce info"></textarea>
 								</div>
 							</div>
-							<div class="form__group form__group--nogrow">
+							<div class="form__group form__group--consent">
+								<span class="error__message"><i class="fas fa-exclamation-circle"></i>Pre odoslanie formuláru je potrebné súhlasiť so spracovaním osobných údajov</span>
 								<label class="form__consent">
 									Súhlasím so spracovaním <a href="#">osobných údajov</a>
 									<input type="checkbox" />
@@ -546,7 +547,7 @@
 									</span>
 								</label>
 							</div>
-							<div class="form__group form__group--nogrow">
+							<div class="form__group form__group--submit">
 								<button class="btn">Odoslať</button>
 							</div>
 						</form>
@@ -693,7 +694,7 @@
 									<textarea class="form__control" rows="2" placeholder="Vaša správa"></textarea>
 								</div>
 							</div>
-							<div class="form__group form__group--nogrow">
+							<div class="form__group form__group--consent">
 								<label class="form__consent">
 									Súhlasím so spracovaním <a href="#">osobných údajov</a>
 									<input type="checkbox" />
@@ -702,7 +703,7 @@
 									</span>
 								</label>
 							</div>
-							<div class="form__group form__group--nogrow">
+							<div class="form__group form__group--submit">
 								<button class="btn">Odoslať</button>
 							</div>
 						</form>
