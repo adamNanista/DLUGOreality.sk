@@ -37,10 +37,9 @@
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.23/jquery-ui.min.js"></script>
 	<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-	
-	<!-- Load Map -->
-	<script src="assets/js/map/leaflet.js"></script>
-	<link rel="stylesheet" href="assets/js/map/leaflet.css" />
+	<script type="text/javascript" src="https://openlayers.org/api/OpenLayers.js"></script>
+	<script type="text/javascript" src="https://realityexport.sk/storage/template/js/detail.js?v1"></script>
+	<script type="text/javascript" src="https://realityexport.sk/storage/template/js/main2.js?v1"></script>
 </head>
 <body>
 
@@ -229,7 +228,7 @@
 						</div>
 						<ul class="icon__list icon__list--stacked">
 							<li class="icon__list__item">
-								<a href="javascript:mapDialog('49.065962','20.2921281','Jahodná, Poprad, Poprad, Slovakia')" class="icon__list__anchor">
+								<a href="javascript:mapDialog('49.065962','20.2921281','Jahodná, Poprad, Poprad, Slovakia')" class="icon__list__anchor open__popup" data-popup="map__popup">
 									<div class="icon__list__icon">
 										<i class="fas fa-map-marker-alt"></i>
 									</div>
@@ -249,7 +248,7 @@
 								</a>
 							</li>
 							<li class="icon__list__item">
-								<a href="#" class="icon__list__anchor">
+								<a href="javascript:ajaxWindow('/hypo-kalkulacka/239000','Vypočítať úver',350);" class="icon__list__anchor open__popup" data-popup="uver__popup">
 									<div class="icon__list__icon">
 										<i class="fas fa-chart-bar"></i>
 									</div>
@@ -259,7 +258,7 @@
 								</a>
 							</li>
 							<li class="icon__list__item">
-								<a href="#" class="icon__list__anchor">
+								<a href="javascript:ajaxWindow('/nehnutelnost/poslat-znamemu/2014688','Poslať známemu',350);" class="icon__list__anchor">
 									<div class="icon__list__icon">
 										<i class="fas fa-share"></i>
 									</div>
@@ -269,7 +268,7 @@
 								</a>
 							</li>
 							<li class="icon__list__item">
-								<a href="#" class="icon__list__anchor">
+								<a href="javascript:ajaxWindow('/nehnutelnost/sledovat-ponuku/2014688','Sledovať ponuku',350);" class="icon__list__anchor">
 									<div class="icon__list__icon">
 										<i class="fas fa-bell"></i>
 									</div>
@@ -727,7 +726,6 @@
 	
 	<script src="assets/js/script.js"></script>
 	<script src="assets/js/menu.js"></script>
-	<script src="assets/js/map.js"></script>
 	
 </body>
 </html>
