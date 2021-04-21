@@ -137,7 +137,6 @@
 	flex-wrap: wrap;
 	margin-right: -8px !important;
 	margin-left: -8px !important;
-	max-width: none !important;
 	
 	text-align: left;
 }
@@ -317,7 +316,6 @@
 	flex-direction: row;
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
-	max-width: none !important;
 	margin-right: 0 !important;
 	margin-left: 0 !important;
 }
@@ -357,7 +355,6 @@
 	flex-wrap: wrap;
 	margin-right: -8px !important;
 	margin-left: -8px !important;
-	max-width: none !important;
 	
 	text-align: left;
 }
@@ -548,13 +545,15 @@
 
 /* Back Btn */
 
-.back__btn {
+.back__btn, 
+.seeall__btn {
 	color: inherit;
 	font-size: 14px;
 	line-height: 24px;
 	text-decoration: none;
 }
-.back__btn i {
+.back__btn i, 
+.seeall__btn i {
 	margin-right: 8px;
 	width: 1em;
 	
@@ -1043,7 +1042,7 @@
 }
 ::placeholder {
 	color: #c3c3c3;
-	opacity: 1; /* Firefox */
+	opacity: 1;
 }
 
 :-ms-input-placeholder {

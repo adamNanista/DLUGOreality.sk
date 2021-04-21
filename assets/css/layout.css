@@ -190,8 +190,7 @@ body.block-scroll {
 .section .h1--like, 
 .section h2, 
 .section .h2--like, 
-.section p, 
-.section ul {
+.section p {
 	margin-right: auto;
 	margin-left: auto;
 	max-width: 576px;
@@ -200,14 +199,17 @@ body.block-scroll {
 .section.contact .h1--like, 
 .section.contact h2, 
 .section.contact .h2--like, 
-.section.contact p, 
-.section.contact ul, 
+.section.contact p,
 .section.detail h1, 
 .section.detail .h1--like, 
 .section.detail h2, 
 .section.detail .h2--like, 
 .section.detail p, 
-.section.detail ul {
+.section.products h1, 
+.section.products .h1--like, 
+.section.products h2, 
+.section.products .h2--like, 
+.section.products p {
 	margin-right: 0;
 	margin-left: 0;
 }
@@ -243,6 +245,8 @@ body.block-scroll {
 }
 .section.detail {
 	padding: 0 16px 32px;
+	
+	border-bottom: 1px solid #eeeeee;
 }
 
 .section.full--height .row {
@@ -257,6 +261,11 @@ body.block-scroll {
 	-webkit-box-flex: 1;
 	-ms-flex: 1 1 0px;
 	flex: 1 1 0;
+}
+.section.products .col.seall {
+	padding-top: 8px;
+	
+	text-align: center;
 }
 
 .section.sell .icon__list {
@@ -449,6 +458,9 @@ body.block-scroll {
 		padding: 0 24px 48px;
 	}
 	
+	.section.products .col.seall {
+		padding-top: 36px;
+	}
 	.section.detail .col.back {
 		padding-top: 24px;
 		padding-bottom: 24px;
