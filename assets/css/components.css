@@ -150,6 +150,7 @@
 .product__list__anchor, 
 .product__list__image, 
 .product__list__title, 
+.product__list__icon, 
 .product__list__flag, 
 .product__list__detail, 
 .product__list__price {
@@ -184,6 +185,21 @@
 	
 	background-color: #ffa827;
 	border-radius: 4px;
+}
+.product__list__icon {
+	height: 24px;
+	width: 24px;
+	position: absolute;
+	top: 8px;
+	right: 8px;
+	
+	color: #e7e7e7;
+	font-size: 12px;
+	line-height: 24px;
+	text-align: center;
+	
+	background-color: rgba(0, 0, 0, 0.66);
+	border-radius: 50%;
 }
 .product__list__image {
 	height: auto;
@@ -283,6 +299,10 @@
 	.product__list__flag {
 		top: -12px;
 		left: -12px;
+	}
+	.product__list__icon {
+		top: 12px;
+		right: 12px;
 	}
 	.product__list__content {
 		padding: 24px;
