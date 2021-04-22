@@ -228,7 +228,7 @@
 						</div>
 						<ul class="icon__list icon__list--stacked">
 							<li class="icon__list__item">
-								<a href="javascript:mapDialog('49.065962','20.2921281','Jahodná, Poprad, Poprad, Slovakia')" class="icon__list__anchor open__popup" data-popup="map__popup">
+								<a href="javascript:mapDialog('49.065962','20.2921281','Jahodná, Poprad, Poprad, Slovakia')" class="icon__list__anchor">
 									<div class="icon__list__icon">
 										<i class="fas fa-map-marker-alt"></i>
 									</div>
@@ -248,7 +248,7 @@
 								</a>
 							</li>
 							<li class="icon__list__item">
-								<a href="javascript:ajaxWindow('/hypo-kalkulacka/239000','Vypočítať úver',350);" class="icon__list__anchor open__popup" data-popup="uver__popup">
+								<a href="javascript:ajaxWindow('/hypo-kalkulacka/239000','Vypočítať úver',350);" class="icon__list__anchor" >
 									<div class="icon__list__icon">
 										<i class="fas fa-chart-bar"></i>
 									</div>
@@ -348,12 +348,12 @@
 							</div>
 							<div class="form__group">
 								<div class="form__element">
-									<textarea class="form__control" rows="2" placeholder="Vaša správa"></textarea>
+									<textarea class="form__control" id="text" rows="2" placeholder="Vaša správa"></textarea>
 								</div>
 							</div>
 							<div class="form__group form__group--consent">
 								<label class="form__consent">
-									Súhlasím so spracovaním <a href="#">osobných údajov</a>
+									Súhlasím so spracovaním <a href="#" class="open__popup" data-popup="osobne-udaje__popup">osobných údajov</a>
 									<input type="checkbox" />
 									<span class="checkmark">
 										<i class="fas fa-check"></i>
@@ -361,21 +361,21 @@
 								</label>
 								<label class="form__consent">
 									Mám záujem o ďalšie informácie.
-									<input type="checkbox" />
+									<input type="checkbox" id="dalsieInfo" />
 									<span class="checkmark">
 										<i class="fas fa-check"></i>
 									</span>
 								</label>
 								<label class="form__consent">
 									Mám záujem o obhliadku nehnuteľnosti.
-									<input type="checkbox" />
+									<input type="checkbox" id="obhliadka" />
 									<span class="checkmark">
 										<i class="fas fa-check"></i>
 									</span>
 								</label>
 								<label class="form__consent">
 									Navrhujem cenu ... EUR.
-									<input type="checkbox" />
+									<input type="checkbox" id="navrhujem" />
 									<span class="checkmark">
 										<i class="fas fa-check"></i>
 									</span>
@@ -610,7 +610,7 @@
 							</div>
 							<div class="form__group form__group--nogrow">
 								<label class="form__consent">
-									Súhlasím so spracovaním <a href="#">osobných údajov</a>
+									Súhlasím so spracovaním <a href="#" class="open__popup" data-popup="osobne-udaje__popup">osobných údajov</a>
 									<input type="checkbox" />
 									<span class="checkmark">
 										<i class="fas fa-check"></i>
@@ -724,8 +724,21 @@
 		</div>
 	</div>
 	
+	<div class="popup" id="osobne-udaje__popup" data-toggle="true">
+		<div class="popup__container">
+			<div class="popup__header">
+				<a href="#" class="popup__close"><i class="fas fa-times"></i></a>
+				<p class="popup__title"><strong>Spracovanie osobných údajov</strong></p>
+			</div>
+			<div class="popup__content">
+				<p>Vaše údaje zadané do kontaktného formulára budú odoslané konkrétnemu predajcovi. Vaše údaje zadané do kontaktného formulára budú odoslané konkrétnemu predajcovi. Vaše údaje zadané do kontaktného formulára budú odoslané konkrétnemu predajcovi. Vaše údaje zadané do kontaktného formulára budú odoslané konkrétnemu predajcovi. Vaše údaje zadané do kontaktného formulára budú odoslané konkrétnemu predajcovi. Vaše údaje zadané do kontaktného formulára budú odoslané konkrétnemu predajcovi. Vaše údaje zadané do kontaktného formulára budú odoslané konkrétnemu predajcovi. Vaše údaje zadané do kontaktného formulára budú odoslané konkrétnemu predajcovi.</p>
+			</div>
+		</div>
+	</div>
+	
 	<script src="assets/js/script.js"></script>
 	<script src="assets/js/menu.js"></script>
+	<script src="assets/js/popup.js"></script>
 	
 </body>
 </html>

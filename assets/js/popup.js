@@ -12,6 +12,8 @@ var TogglePopup = (function () {
 		if (DOM.popupTriggers.length) {
 			for (var i = 0; i < DOM.popupTriggers.length; i++) {
 				DOM.popupTriggers[i].addEventListener('click', function (e) {
+					e.preventDefault();
+					
 					var popup = this.getAttribute('data-popup');
 					toggleModule(document.querySelector('#' + popup));
 				});
